@@ -1,0 +1,20 @@
+(a) DESCRIBE Products;
+(b) SELECT ItemID FROM PRODUCTS;
+(c)	SELECT * FROM Invoices WHERE ID = 1;
+(d) SELECT ItemID FROM Products WHERE Name LIKE "D%";
+(e) SELECT Name FROM Products WHERE Price > 3 ORDER BY ID;
+(f) SELECT PhoneNum FROM Customers WHERE AreaCode IN(
+		SELECT AreaCode FROM Drivers);
+(g) SELECT COUNT(Price) FROM Products WHERE Price > 3;
+(h) SELECT * FROM Drives WHERE AreaCode = 605, SELECT ID FROM Customer WHERE AreaCode=605;
+(i) ALTER TABLE Customers RENAME COLUMN PhoneNum TO Phone;
+	ALTER TABLE Customers CHANGE PhoneNum Phone int;
+	ALTER TABLE Customer ADD AreaCode int;
+(j) ALTER TABLE Invoices DROP COLUMN Products;
+	DELETE FROM Products WHERE Name = "Steak";
+(k) CREATE USER Test IDENTIFIED BY 'testpass123';
+	CREATE USER Test2 IDENTIFIED BY 'testpass123';
+(l) GRANT SELECT ON resturaunt.Invoices TO Test;
+	GRANT ALL ON resturaunt TO Test2;
+(m) -mysqldump -u root -p resturaunt > resturaunt.sql
+(n) -mysql -u root -p resturaunt < resturaunt.sql
