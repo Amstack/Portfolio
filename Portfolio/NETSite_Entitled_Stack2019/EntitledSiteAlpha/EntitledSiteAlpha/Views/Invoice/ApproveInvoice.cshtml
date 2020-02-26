@@ -1,0 +1,58 @@
+﻿@model EntitledSiteAlpha.Models.InvoiceModel
+
+<h4>Are you sure you want to approve this invoice?</h4>
+<h5>Edit details for the invoice as neccessary</h5>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="ApproveInvoice">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="InvoiceType" class="control-label"></label>
+                <input asp-for="InvoiceType" class="form-control" />
+                <span asp-validation-for="InvoiceType" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InvoiceItemName" class="control-label"></label>
+                <input asp-for="InvoiceItemName" class="form-control" />
+                <span asp-validation-for="InvoiceItemName" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InvoiceItemCount" class="control-label"></label>
+                <input asp-for="InvoiceItemCount" class="form-control" />
+                <span asp-validation-for="InvoiceItemCount" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InvoiceID" class="control-label"></label>
+                <input asp-for="InvoiceID" class="form-control" />
+                <span asp-validation-for="InvoiceID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="RequestUser" class="control-label"></label>
+                <input asp-for="RequestUser" class="form-control" />
+                <span asp-validation-for="RequestUser" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ApproveUser" class="control-label"></label>
+                <input asp-for="ApproveUser" class="form-control" />
+                <span asp-validation-for="ApproveUser" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="InvoiceStatus" class="control-label"></label>
+                <input asp-for="InvoiceStatus" class="form-control" />
+                <span asp-validation-for="InvoiceStatus" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

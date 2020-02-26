@@ -1,0 +1,66 @@
+﻿@model IEnumerable<EntitledSiteAlpha.Models.InvoiceModel>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.InvoiceType)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InvoiceItemCount)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InvoiceItemName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InvoiceID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RequestUser)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ApproveUser)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.InvoiceStatus)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @if (item.InvoiceType == 1)
+                        {<text>Donation</text> }
+                    else
+                        { <text>Request</text>}
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.InvoiceItemCount)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.InvoiceItemName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.InvoiceID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.RequestUser)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ApproveUser)
+                </td>
+                <td>
+                    New
+                </td>
+                <td>
+                    @Html.ActionLink("Approve", "ApproveInvoice", new { id = item.InvoiceID }) |
+                    @Html.ActionLink("Deny", "DenyInvoice", new { id = item.InvoiceID })
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

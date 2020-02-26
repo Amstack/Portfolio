@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29306.81
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EntitledSiteAlpha", "EntitledSiteAlpha\EntitledSiteAlpha.csproj", "{B988AB23-179E-4852-AB6D-2AB64C4036A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntitledSiteAlphaUnitTests", "EntitledAlphaTests\EntitledSiteAlphaUnitTests.csproj", "{5AFAA05F-42D6-4ABA-8258-82D24841D8EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B988AB23-179E-4852-AB6D-2AB64C4036A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B988AB23-179E-4852-AB6D-2AB64C4036A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B988AB23-179E-4852-AB6D-2AB64C4036A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B988AB23-179E-4852-AB6D-2AB64C4036A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5AFAA05F-42D6-4ABA-8258-82D24841D8EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5AFAA05F-42D6-4ABA-8258-82D24841D8EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5AFAA05F-42D6-4ABA-8258-82D24841D8EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5AFAA05F-42D6-4ABA-8258-82D24841D8EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {58ABDF37-18CA-4276-8DE6-26CE3BEB198A}
+	EndGlobalSection
+EndGlobal

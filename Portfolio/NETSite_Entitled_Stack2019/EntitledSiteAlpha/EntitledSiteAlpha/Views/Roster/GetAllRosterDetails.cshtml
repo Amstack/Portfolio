@@ -1,0 +1,33 @@
+﻿@model IEnumerable<EntitledSiteAlpha.Models.RosterModel>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UserName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dkp)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.numDonations)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.UserName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.dkp)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.numDonations)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

@@ -1,0 +1,51 @@
+﻿@model IEnumerable<EntitledSiteAlpha.Models.BankModel>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Count)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.GoldCost)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DKPCost)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                <img src=@Html.DisplayFor(modelItem => item.Link) width="20" height="20" /> 
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Count)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.GoldCost)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DKPCost)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "EditBankDetails", new { id = item.ItemID })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

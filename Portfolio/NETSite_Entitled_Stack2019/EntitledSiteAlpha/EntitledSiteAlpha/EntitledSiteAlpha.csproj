@@ -1,0 +1,107 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <UserSecretsId>aspnet-EntitledSiteAlpha-177F04F5-032D-4208-818B-3BDAE00ACDB4</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Views\Bank\images\BankResources\ArcaneCrystal.jpg" />
+    <None Remove="Views\Bank\images\BankResources\ArcaniteBar.jpg" />
+    <None Remove="Views\Bank\images\BankResources\BlackLotus.jpg" />
+    <None Remove="Views\Bank\images\BankResources\Dreamfoil.jpg" />
+    <None Remove="Views\Bank\images\BankResources\ElementalFire.jpg" />
+    <None Remove="Views\Bank\images\BankResources\EssenceOfWater.jpg" />
+    <None Remove="Views\Bank\images\BankResources\GhostMushroom.jpg" />
+    <None Remove="Views\Bank\images\BankResources\GoldenPearl.jpg" />
+    <None Remove="Views\Bank\images\BankResources\Gromsblood.jpg" />
+    <None Remove="Views\Bank\images\BankResources\Icecap.jpg" />
+    <None Remove="Views\Bank\images\BankResources\IronBar.jpg" />
+    <None Remove="Views\Bank\images\BankResources\MithrilBar.jpg" />
+    <None Remove="Views\Bank\images\BankResources\Mooncloth.jpg" />
+    <None Remove="Views\Bank\images\BankResources\MountainSilversage.jpg" />
+    <None Remove="Views\Bank\images\BankResources\Plaguebloom.jpg" />
+    <None Remove="Views\Bank\images\BankResources\RighteousOrb.jpg" />
+    <None Remove="Views\Bank\images\BankResources\StonescaleEel.jpg" />
+    <None Remove="Views\Bank\images\BankResources\Sungrass.jpg" />
+    <None Remove="Views\Bank\images\BankResources\ThoriumOre.jpg" />
+    <None Remove="Views\Bank\images\BankResources\WinterfallFirewater.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Views\Bank\images\BankResources\ArcaneCrystal.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Bank\images\BankResources\ArcaniteBar.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Bank\images\BankResources\BlackLotus.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Bank\images\BankResources\Dreamfoil.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Bank\images\BankResources\ElementalFire.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Bank\images\BankResources\EssenceOfWater.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Bank\images\BankResources\GhostMushroom.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Bank\images\BankResources\GoldenPearl.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Bank\images\BankResources\Gromsblood.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Bank\images\BankResources\Icecap.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Bank\images\BankResources\IronBar.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Bank\images\BankResources\MithrilBar.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Bank\images\BankResources\Mooncloth.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Bank\images\BankResources\MountainSilversage.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Bank\images\BankResources\Plaguebloom.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Bank\images\BankResources\RighteousOrb.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Bank\images\BankResources\StonescaleEel.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Bank\images\BankResources\Sungrass.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Bank\images\BankResources\ThoriumOre.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Bank\images\BankResources\WinterfallFirewater.jpg">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNet.Providers.Core" Version="2.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.10" />
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.6.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Areas\Identity\Services\" />
+  </ItemGroup>
+
+</Project>

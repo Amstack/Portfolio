@@ -1,0 +1,70 @@
+﻿@model EntitledSiteAlpha.Models.EventChooser
+
+@{
+    ViewData["Title"] = "DKPForm";
+}
+
+<h2>DKPForm</h2>
+
+<h4>Please select the events you have participated in this week.</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" asp-action="DKPForm">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="col-md-10">
+                <h3>Onyxia</h3>
+                Yes
+                @Html.RadioButtonFor(model => model.Onyxia, 8)
+                No
+                @Html.RadioButtonFor(model => model.Onyxia, 0)
+            </div></br></br>
+            <div class="col-md-10">
+                <h3>Molten Core</h3>
+                Yes
+                @Html.RadioButtonFor(model => model.MoltenCore, 8)
+                No
+                @Html.RadioButtonFor(model => model.MoltenCore, 0)
+            </div></br></br>
+            <div class="col-md-10">
+                <h3>Blackwing Lair</h3>
+                Yes
+                @Html.RadioButtonFor(model => model.BWL, 8)
+                No
+                @Html.RadioButtonFor(model => model.BWL, 0)
+            </div></br></br>
+            <div class="col-md-10">
+                <h3>Ahn'Qiraj 40</h3>
+                Yes
+                @Html.RadioButtonFor(model => model.AQ, 8)
+                No
+                @Html.RadioButtonFor(model => model.AQ, 0)
+            </div></br></br>
+            <div class="col-md-10">
+                <h3>Naxxrammas</h3>
+                Yes
+                @Html.RadioButtonFor(model => model.Naxx, 8)
+                No
+                @Html.RadioButtonFor(model => model.Naxx, 0)
+            </div></br></br>
+            <div class="col-md-10">
+                <h3>Guild PVP</h3>
+                Yes
+                @Html.RadioButtonFor(model => model.PVP, 8)
+                No
+                @Html.RadioButtonFor(model => model.PVP, 0)
+            </div></br></br>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="GetAllRosterDetails" asp-controller="Roster">Go to Roster</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
